@@ -1,0 +1,10 @@
+# Keep Linux line endings (LF) in every checkout, including on Windows.
+# The code runs on the Jetson (Linux): shell scripts and Python files with Windows
+# line endings (CRLF) fail there with errors like "bad interpreter".
+* text=auto eol=lf
+
+# Binary files: never convert.
+*.png binary
+*.jpg binary
+*.pdf binary
+*.drawio binary
