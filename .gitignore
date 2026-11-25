@@ -1,0 +1,35 @@
+# colcon build output: generated on each machine, never committed
+build/
+install/
+log/
+
+# Recordings and large data: keep them in the team's shared storage
+*.db3
+*.mcap
+*.bag
+*.svo
+*.svo2
+trial_*/
+bags/
+
+# Model weights (store in shared storage, download with a script)
+*.pt
+*.onnx
+*.engine
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Editors and operating systems
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+*.pem
+id_*
